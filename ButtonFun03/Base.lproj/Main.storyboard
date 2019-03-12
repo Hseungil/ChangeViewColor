@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,20 +15,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ButtonFun03" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKP-gP-Kfu">
-                                <rect key="frame" x="68" y="120" width="632" height="29"/>
+                                <rect key="frame" x="68" y="144" width="278" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOI-pa-x2B">
-                                <rect key="frame" x="70" y="249" width="48" height="36"/>
+                                <rect key="frame" x="70" y="273" width="48" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="NSi-3Z-Rmn"/>
-                                    <constraint firstAttribute="width" constant="48" id="qjT-v7-RS7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="qjT-v7-RS7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Press"/>
@@ -37,9 +37,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCI-w3-nx7">
-                                <rect key="frame" x="668" y="249" width="30" height="36"/>
+                                <rect key="frame" x="314" y="273" width="30" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="4CZ-JJ-JPP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="4CZ-JJ-JPP"/>
                                     <constraint firstAttribute="height" constant="36" id="RYN-bY-ToL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -49,9 +49,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b69-IJ-Gbs">
-                                <rect key="frame" x="324" y="355" width="120" height="36"/>
+                                <rect key="frame" x="147" y="379" width="120" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="S5m-Hq-gYb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="S5m-Hq-gYb"/>
                                     <constraint firstAttribute="height" constant="36" id="yha-75-xbc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -61,11 +61,12 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.6671401092" blue="0.13889048949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="b69-IJ-Gbs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ART-v3-ke0"/>
                             <constraint firstItem="aCI-w3-nx7" firstAttribute="top" secondItem="VKP-gP-Kfu" secondAttribute="bottom" constant="100" id="Eng-GB-yQ9"/>
                             <constraint firstItem="VKP-gP-Kfu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="McH-T3-oy2"/>
+                            <constraint firstItem="aCI-w3-nx7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fOI-pa-x2B" secondAttribute="trailing" constant="8" symbolic="YES" id="NxX-Bb-KVL"/>
                             <constraint firstItem="b69-IJ-Gbs" firstAttribute="top" secondItem="fOI-pa-x2B" secondAttribute="bottom" constant="70" id="R3e-Xs-XOh"/>
                             <constraint firstItem="fOI-pa-x2B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="VSb-Vl-yIE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VKP-gP-Kfu" secondAttribute="trailing" constant="68" id="dYb-Dw-5dF"/>
