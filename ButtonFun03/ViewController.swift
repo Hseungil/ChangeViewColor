@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
     @IBAction func buttonPressed(_ sender: Any) {
         //print("Hello Button Event!")
-        myLabel.text = "Hello Button Event!"
+        myLabel.text = "Hello Button pressed!"
     }
     
     @IBAction func label_Clear(_ sender: Any) {
@@ -28,6 +28,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func changeViewColor(_ sender: Any) {
+        // toggle 스위치
         if colorState == true {
             self.view.backgroundColor = UIColor.yellow
             colorState = false
